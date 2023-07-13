@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Condiciones</title>
+</head>
+<body>
+
+    <div class="container-imagen-con-borde">
+
+        <div class="titulo-imagen">
+            <h1>Imagen con borde</h1>
+        </div>
+
+        <div class="imagen-con-borde">
+            <img onclick="bordeimg()" id="imagen" src="./assets/img/buho.jpeg" alt="buho">
+        </div>
+    </div>
+
+    
+    <div class="container-stikers">
+
+        <div class="titulo-stikers">
+            <h1>Puedes llevar 10 stickers en total</h1>
+        </div>
+
+        <div class="total-stikers">
+            <img class="stiker" src="./assets/img/stikers-1.png" alt="stiker-1">
+            <img class="stiker" src="./assets/img/stikers-2.png" alt="stiker-2">
+            <img class="stiker" src="./assets/img/stikers-3.png" alt="stiker-3">
+        </div>
+
+        <div class="container-calculo">
+
+            <div class="calculo">
+                <input type="number" min="0" clase="digito" id="p1">
+            </div>
+
+            <div class="calculo">
+                <input type="number" min="0" class="digito" id="p2">
+            </div>
+
+            <div class="calculo">
+                <input type="number" min="0" clase="digito" id="p3">
+            </div>
+        </div>
+        
+        <p class="resultado" id="resultado"></p>
+        
+        <button class="boton" onclick="stiker()">Calcular</button>
+    </div>
+    
+    <div class="container-principal">
+
+        <div class="contraseña">
+            
+            <div class="titulo-contraseña">
+                <h2>Ingresa el password</h2>
+            </div>
+            
+            <div class="selection">
+                <select id="digito1">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+
+                <select id="digito2">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+
+
+                <select id="digito3">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            
+            <button onclick="botoncontraseña()" id="boton-contraseña">Ingresar</button>
+            <p class="respuesta" id="respuesta"></p>
+        </div>
+    </div>
+    
+    <script src="./assets/js/borde.js"></script>
+    <script src="./assets/js/contraseña.js"></script>
+    <script src="./assets/js/stikers.js"></script>
+</body>
+</html>
